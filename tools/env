@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+
+CC_PATH=cc/bin
+
+if [ ! -d $CC_PATH ]; then
+	echo "cross compiler not found at path '$CC_PATH', maybe you need to built it first?"
+	return
+fi
+
+if [[ "$PATH" == *$CC_PATH* ]]; then
+	echo "cross compiler is already added to \$PATH"
+	return
+fi
+
+export PATH=$PATH:$CC_PATH

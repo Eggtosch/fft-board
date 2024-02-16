@@ -1,0 +1,25 @@
+From 679c1b7232f9ced6e06f86545d4cc78ade2cd9a7 Mon Sep 17 00:00:00 2001
+From: Oskar Munz <oskar.munz@gmx.de>
+Date: Sat, 27 Jan 2024 00:40:12 +0100
+Subject: [PATCH] Update WXVERSION to correct local version
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 6095f86..db6af1d 100644
+--- a/Makefile
++++ b/Makefile
+@@ -4,7 +4,7 @@
+ # Version
+ #
+ VERSION=$(shell git describe --tags --dirty)
+-WXVERSION=3.0
++WXVERSION=3.2
+ 
+ #
+ # Source files
+-- 
+2.43.0
+
